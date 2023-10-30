@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- META TAGS -->
+    <meta charset="utf-8">
+    <meta name="author" content="John Quezada">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+
+    <!-- WEBSITE TITLE & DESCRIPTION -->
+    <title>TechPlayer - Pagina de VideoJuegos</title>
+    <meta name="description" content="The best template for game developers and small studios">
+    <meta name="keywords" content="game, gaming, videogame, developer, steam, studio, team">
+
+    <!-- OG meta tags that improve the look of your post on social media -->
+    <meta property="og:site_name" content="" /><!--website name-->
+    <meta property="og:site" content="" /> <!--website link-->
+    <meta property="og:title" content=""/> <!--Post title-->
+    <meta property="og:description" content="" /> <!--Post description-->
+    <meta property="og:image" content="" /><!-- Image link (jpg only)-->
+    <meta property="og:url" content="" /> <!--where do you want your post to link to-->
+    <meta property="og:type" content="article" />
+
+    <!-- Favicon and Apple Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+
+    <!-- STYLES -->
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Animations -->
+    <link href="css/animations.css" rel="stylesheet">
+    <!-- Lightbox -->
+    <link href="css/lightbox.min.css" rel="stylesheet">
+    <!-- Video Lightbox -->
+    <link href="css/modal-video.min.css" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+  
+    
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loader-wrapper">
+        <h1 class="loader-logo"><span class="colored">T</span>ECHPLAYER</h1>
+        <div id="progress"></div>
+        <h3 class="loader-text">CARGANDO</h3>
+    </div>
+    
+    <!-- //// HEADER //// -->
+    <header id="main-header">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+            <div class="container">
+                <!-- Site Logo -->
+                <a id="logo" class="navbar-brand" href="#"><img class="img-fluid" src="images/logo.png" alt="site logo"></a>
+                <!-- Dropdown Button -->
+                <button id="hamburger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                </button>
+                <!-- Navigation Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#about">Acerca de Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#games">Juegos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">Nuestro Equipo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#careers">Trabaja con Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header><!-- Header End -->
+    
+    <!-- /// HERO SECTION /// -->
+    <div id="hero-section" class="medium-margin">
+        <div class="row hero-unit">
+            <div class="hero-overlay"></div>
+            <video autoplay loop muted poster="images/poster.jpg" id="bgvid" class="img-fluid">
+                <source src="images/bg-vid.mp4" type="video/mp4"><!-- your video goes here -->
+            </video>
+             <div class="hero-caption">
+                <h1>Nosotros hacemos <span class="colored">increíbles</span> juegos</h1>
+            </div>
+        </div>
+    </div><!-- Hero Section End -->
+    
+    <!-- /// Main Container /// -->
+    <div class="container">
+        <!-- /// ABOUT SECTION /// -->
+        <div id="about" class="large-margin">
+            <a href="about"></a><!-- Nav Anchor -->
+            <div class="row heading tiny-margin">
+                <div class="col-md-auto">
+                    <h1 class="animation-element slide-down">ACERCA DE<span class="colored">NOSOTROS</span></h1>
+                </div>
+                <div class="col">
+                    <hr class="animation-element extend">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="small-margin">En GameTech Creations, la pasión por la creación de mundos virtuales emocionantes es nuestra fuerza impulsora. Somos una empresa innovadora de desarrollo de videojuegos que se dedica a transformar ideas creativas en experiencias interactivas de alta calidad. Nuestro equipo diverso y apasionado de diseñadores, artistas, programadores y narradores trabaja en armonía para llevar a la vida emocionantes mundos digitales. Desde emocionantes juegos de aventuras hasta desafiantes juegos de estrategia y experiencias de realidad virtual envolventes, nuestro portafolio abarca una amplia gama de géneros y plataformas.</p>
+                    <img id="awards" src="images/awards.png" class="img-fluid" alt="awads">
+                </div>
+                <div class="col-md-6">
+                    <img id="support-image" src="images/placeholder.jpg" data-src="images/digital_collage.png" class="img-fluid b-lazy" alt="digital collage">
+                </div>
+            </div>
+        </div>
+        <!-- /// GAMES SECTION /// -->
+        <div id="games" class="large-margin">
+            <a href="games"></a><!-- Nav Anchor -->
+            <div class="row heading tiny-margin">
+                <div class="col-md-auto">
+                    <h1 class="animation-element slide-down">Nuestros <span class="colored">Juegos</span></h1>
+                </div>
+                <div class="col">
+                    <hr class="animation-element extend">
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-11 small-margin">
+                   <p>En TechPlayer, nos enorgullece presentar experiencias excepcionales, pulidas y cautivadoras que sumergen por completo a nuestra apasionada base de fans.</p>
+                </div>
+                <div class="col-md-12">
+                    <ul class="game-tags">
+                        <li>Ordenar por etiqueta :</li>
+                        <li><a href="#" data-filter=".new">NUEVOS</a></li>
+                        <li><a href="#" data-filter="*">TODOS</a></li>
+                        <li><a href="#" data-filter=".pc">PC</a></li>
+                        <li><a href="#" data-filter=".mobile">MÓVILES</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="games-portfolio ">
+                <!-- Game Card Video -->
+                <div class="row game-card pc new">
+                    <div class="col-lg-12 col-xl-5 game-card-left">
+                        <a href="#" class="js-video-button" data-video-id='POcdrHSJUY0' data-channel="youtube"> <!-- Video link goes here -->
+                            <div class="overlay">
+                                <i class="fa fa-play fa-3x"></i>
+                            </div>
+                            <img src="images/unreal_torunomet.jpeg" data-src="images/unreal_torunomet.jpeg" class="img-fluid b-lazy" alt="video thumbnail"> <!-- Video Thumbnail Img -->
+                        </a>
+                    </div>
+                    <div class="col-lg-12 col-xl-7 game-card-right">
+                        <h2 class="short-hr-left">UNREAL TOURNOMET</h2>
+                        <p class="tags"><span class="subtle">Action RPG | PC</span> </p>
+                        <p class="game-description">Esto es un desafío. A cualquiera que alguna vez derribó a un hombre en un shooter 3D, y le gustó. Esta es tu última oportunidad para probar que tú eres el mejor de los mejores. Esta es una gladiadora arena del futuro. Esta es una prueba de un sólo jugador por fuego. Un campeonato deathmatch de peso pesado del universo. <span class="expand colored strong" data-toggle="modal" data-target="#game1">Leer más</span></p>
+                        <p>US$69.99</p>
+                        <div class="steam-btn">
+                            <a href="#">
+                                <i class="fa fa-steam fa-3x"></i>
+                                <p>GET IT ON <br><span class="spaced">STEAM</span></p>
+                            </a>
+                        </div>
+                        <div class="reviews">
+                            <a href="#"><div class="score-card">
+                                <p class="score">8.0</p>
+                                <p>Gamespot</p>
+                            </div></a>
+                            <a href="#"><div class="score-card">
+                                <p class="score">7.9</p>
+                                <p>IGN</p>
+                            </div></a>
+                            <a href="#"><div class="score-card">
+                                <p class="score">86</p>
+                                <p>Metacritic</p>
+                            </div></a>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade game-modal" id="game1" tabindex="-1" role="dialog" aria-labelledby="scales" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title" id="scales">SWORDS &amp; SCALES</h1>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                               <div class="modal-body">
+                                   <h2 class="short-hr-left">UNREAL TORUMENT</h2>
+                                   <p>UT es conocido y elogiado por su inteligencia artficial. El jugador puede elegir un nivel de dificultad (desde "Novato" -Novice- hasta "Semidiós" -Godlike-) que los bots usarán en los juegos multijugador y de un solo jugador. En el modo multijugador, los bots, además, pueden ser modificados cambiando su nombre, apariencia, puntería, preferencias de arma, estado de alerta, (awareness) y demás atributos. Más adelante, UT implementa, además, una opción de "auto-ajuste de dificultad" que, al ser activada, ajusta automáticamente la dificultad de la IA al nivel actual del jugador.
+                                    El programador de la IA del juego, Steve Polge, había llegado a la fama con anterioridad desarrollando y diseñando el Reaper Bot para el juego Quake, el primer oponente controlado por PC para juegos de ese estilo.</p>
+                                   <img class="img-fluid" src="images/unreal_tournomet1.jpg" alt="screenshot">
+                                   <br>
+                                   <h2 class="short-hr-left">Requisitos del sistema</h2>
+                                   <p>Requisitos: Mínimos Pentium 200 MHz 32 Mb RAM
+
+                                    Recomendados Pentium 266 MHz 64 Mb RAM Aceleración 3D</p>
+                                   <img class="img-fluid" src="images/unreal_tournomet2.jpg" alt="screenshot">
+                                   <br>
+                                   <h2 class="short-hr-left">Equipos y Jugadores</h2>
+                                   <p>En Unreal Tournament, se pueden hallar equipos</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="button secondary" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </div><!-- Game Card End -->
+                
+                
+                <!-- Game Card -->
+                <div class="row game-card pc">
+                    <div class="col-lg-12 col-xl-5 game-card-left">
+                        <a href="images/FinalFanasy.jpg" data-lightbox="screenshots_aurora">
+                            <div class="overlay">
+                                <i class="fa fa-picture-o fa-3x"></i>
+                            </div>
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="images/FinalFanasy.jpg">
+                                <source media="(min-width: 768px)" srcset="images/FinalFanasy.jpg">
+                                <img src="images/placeholder.jpg" data-src="images/game.jpg" class="img-fluid b-lazy" alt="aurora image">
+                            </picture>
+                        </a>
+                        <a href="images/FinalFanasy.jpg" data-lightbox="screenshots_aurora"></a>
+                        <a href="images/FinalFanasy.jpg" data-lightbox="screenshots_aurora"></a>
+                    </div>
+                    <div class="col-lg-12 col-xl-7 game-card-right">
+                        <h2 class="short-hr-left">FINAL FANTASY</h2>
+                        <p class="tags"><span class="subtle">Action RPG | PC</span> </p>
+                        <p class="game-description">El conflicto principal de Final Fantasy recae en un grupo de personajes luchando contra un mal originado por un antagonista que domina o quiere dominar el mundo. <span class="expand colored strong" data-toggle="modal" data-target="#game2">Leer Más</span></p>
+                        <p>US$79.99</p>
+                        <div class="steam-btn">
+                            <a href="#">
+                                <i class="fa fa-steam fa-3x"></i>
+                                <p>GET IT ON <br><span class="spaced">STEAM</span></p>
+                            </a>
+                        </div>
+                        <div class="reviews">
+                            <a href="#"><div class="score-card">
+                                <p class="score">8.5</p>
+                                <p>Gamespot</p>
+                            </div></a>
+                            <a href="#"><div class="score-card">
+                                <p class="score">8.1</p>
+                                <p>IGN</p>
+                            </div></a>
+                            <a href="#"><div class="score-card">
+                                <p class="score">83</p>
+                                <p>Metacritic</p>
+                            </div></a>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade game-modal" id="game2" tabindex="-1" role="dialog" aria-labelledby="aurora" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title" id="aurora">DOOM</h1>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <iframe class="modal-vid" src="https://www.youtube.com/embed/LJI4BdFRmck?si=wZDdhoIPeZ8OCLCq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                                    <h2 class="short-hr-left">Descripción</h2>
+                                    <p>La decimosexta entrega individual de la legendaria serie Final Fantasy marca un giro oscuro en esta franquicia de RPG, con una trama compleja sobre la venganza, la lucha de poderes y una tragedia inevitable.
+
+                                        Final Fantasy XVI reimagina a las invocaciones icónicas de la serie como Eikons. Estas criaturas mortíferas yacen dentro de los Dominantes, hombres y mujeres que heredan su inmenso poder cuando nacen, quieran o no.</p>
+                                    <img class="img-fluid" src="images/tifa-ffvii-remake.webp" alt="screenshot">
+                                    <br>
+                                    </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="button secondary" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </div><!-- Game Card End -->
+                
+                <!-- Game Card -->
+                <div class="row game-card mobile">
+                    <div class="col-lg-12 col-xl-5 game-card-left">
+                        <a href="images/DOOM.webp" data-lightbox="screenshots_dark">
+                            <div class="overlay">
+                                <i class="fa fa-picture-o fa-3x"></i>
+                            </div>
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="images/DOOM.webp">
+                                <source media="(min-width: 768px)" srcset="images/DOOM.webp">
+                                <img src="images/placeholder.jpg" data-src="images/DOOM.webp" class="img-fluid b-lazy" alt="aurora image">
+                            </picture>
+                        </a>
+                        <a href="images/DOOM.webp" data-lightbox="screenshots_dark"></a>
+                        <a href="images/DOOM.webp" data-lightbox="screenshots_dark"></a>
+                    </div>
+                    <div class="col-lg-12 col-xl-7 game-card-right">
+                        <h2 class="short-hr-left">DOOM</h2>
+                        <p class="tags"><span class="subtle">Adventure | Mobile</span></p>
+                        <p class="game-description">Una de las franquicias de shooters en primera persona más icónicas de todos los tiempos por fin regresa a una consola de Nintendo. Desde hace dos décadas el hardware de la compañía japonesa ha gozado de una relación única con la saga; el Doom de SNES, aun con su lentitud, era una demostración técnica de la consola de 16 bits, mientras que la conversión para Game Boy Advance era como tener el futuro en tus manos.. <span class="expand colored strong" data-toggle="modal" data-target="#game3">Leer Más</span></p>
+                        <p>US$99.99</p>
+                        <a href="#" class="button-store">
+                            <i class="fa fa-android fa-2x"></i>
+                            <p>Available on<br><span class="strong">Google Play</span></p>
+                        </a>
+                        <a href="#" class="button-store">
+                            <i class="fa fa-apple fa-2x"></i>
+                            <p>Available on<br><span class="strong">Apple Store</span></p>
+                       </a>
+                        <div class="rating">
+                            <p class="strong">4.1</p>
+                            <ul>
+                                <li><i class="fa fa-star colored"></i></li>
+                                <li><i class="fa fa-star colored"></i></li>
+                                <li><i class="fa fa-star colored"></i></li>
+                                <li><i class="fa fa-star colored"></i></li>
+                                <li><i class="fa fa-star-o"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade game-modal" id="game3" tabindex="-1" role="dialog" aria-labelledby="echo" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title" id="echo">ECHO - DARK ADVENTURES</h1>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                               <div class="modal-body">
+                                   <iframe class="modal-vid" src="https://www.youtube.com/embed/x_d54SejEHA?si=94aN3VnyvS1VkEcB" allowfullscreen></iframe>
+                                   <h2 class="short-hr-left">DOOM</h2>
+                                   <p>La serie se centra en las hazañas de un marine espacial no identificado que opera bajo las órdenes de la Union Aerospace Corporation (UAC), que lucha contra hordas de demonios y no muertos en el inframundo y la Tierra, protagonizando diversos viajes por portales entre ambos mundos.</p>
+                                   <img class="img-fluid" src="images/686773.jpg" alt="screenshot">
+                                   <br>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="button secondary" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- Game Card End -->
+            </div>
+        </div>
+        <!-- /// TEAM SECTION /// -->
+        <div id="team" class="large-margin">
+            <a href="team"></a><!-- Nav Anchor -->
+            <div class="row heading tiny-margin">
+                <div class="col-md-auto">
+                    <h1 class="animation-element slide-down">NUESTRO <span class="colored">EQUIPO</span></h1>
+                </div>
+                <div class="col">
+                    <hr class="animation-element extend">
+                </div>
+            </div>
+            <div class="row medium-margin">
+                <div class="col-md-11 tiny-margin">
+                    <p>
+                        Nuestro talentoso equipo está formado por apasionados creativos y expertos en desarrollo, unidos por la dedicación a nuestra visión. Cada miembro aporta un conjunto único de habilidades y experiencia, lo que nos permite superar los desafíos y ofrecer productos y servicios de alta calidad. Juntos, trabajamos en armonía para llevar nuestras ideas al mundo y mantenernos a la vanguardia de la industria</p>
+                </div>
+                <div id="full-row" class="row text-center">
+                    <div class="col-md-3 team-card">
+                        <figure>
+                            <img src="images/persona1.jpg" data-src="images/persona1.jpg" class="img-fluid b-lazy" alt="teammember">
+                            <figcaption class="team-caption">
+                                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
+                                <hr class="hr-short">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                        <p class="team-name">Michelly Arias</p>
+                        <p class="subtle">Diseñadora principal</p>
+                    </div>
+                    <div class="col-md-3 team-card">
+                        <figure>
+                            <img src="images/persona2.jpg" data-src="images/persona2.jpg" class="img-fluid b-lazy" alt="teammember">
+                            <figcaption class="team-caption">
+                                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
+                                <hr class="hr-short">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                        <p class="team-name">Kevin William</p>
+                        <p class="subtle">Fundador</p>
+                    </div>
+                    <div class="col-md-3 team-card">
+                        <figure>
+                            <img src="images/persona3.jpg" data-src="images/persona3.jpg" class="img-fluid b-lazy" alt="teammember">
+                            <figcaption class="team-caption">
+                                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
+                                <hr class="hr-short">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                        <p class="team-name">Antony Garzon</p>
+                        <p class="subtle">Artista principal</p>
+                    </div>
+                    <div class="col-md-3 team-card">
+                        <figure>
+                            <img src="images/persona4.jpg" data-src="images/persona3.jpg" class="img-fluid b-lazy" alt="teammember">
+                            <figcaption class="team-caption">
+                                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
+                                <hr class="hr-short">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                        <p class="team-name">Jorge Eliecer</p>
+                        <p class="subtle">Programador</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row tiny-margin">
+                <div class="col-md-11">
+                    <h2 class="short-hr-left">Nuestro estudio</h2>
+                </div>
+            </div>
+            <div class="grid-gallery">
+                <div class="row">
+                    <div class="col-md-4 gallery-item">
+                        <a href="images/studio.jpg" data-lightbox="studio_gallery">
+                            <div class="overlay gallery">
+                                <i class="fa fa-picture-o fa-3x"></i>
+                            </div>
+                            <img src="images/placeholder.jpg" data-src="images/studio.jpg" class="img-fluid b-lazy" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 gallery-item">
+                        <a href="images/studio.jpg" data-lightbox="studio_gallery">
+                            <div class="overlay gallery">
+                                <i class="fa fa-picture-o fa-3x"></i>
+                            </div>
+                            <img src="images/placeholder.jpg" data-src="images/studio.jpg" class="img-fluid b-lazy" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 gallery-item">
+                        <a href="images/studio.jpg" data-lightbox="studio_gallery">
+                            <div class="overlay gallery">
+                                <i class="fa fa-picture-o fa-3x"></i>
+                            </div>
+                            <img src="images/placeholder.jpg" data-src="images/studio.jpg" class="img-fluid b-lazy" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 gallery-item">
+                        <a href="images/studio.jpg" data-lightbox="studio_gallery">
+                            <div class="overlay gallery">
+                                <i class="fa fa-picture-o fa-3x"></i>
+                            </div>
+                            <img src="images/placeholder.jpg" data-src="images/studio.jpg" class="img-fluid b-lazy" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 gallery-item">
+                        <a href="images/studio.jpg" data-lightbox="studio_gallery">
+                            <div class="overlay gallery">
+                                <i class="fa fa-picture-o fa-3x"></i>
+                            </div>
+                            <img src="images/placeholder.jpg" data-src="images/studio.jpg" class="img-fluid b-lazy" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 gallery-item">
+                        <a href="images/studio.jpg" data-lightbox="studio_gallery">
+                            <div class="overlay gallery">
+                                <i class="fa fa-picture-o fa-3x"></i>
+                            </div>
+                            <img src="images/placeholder.jpg" data-src="images/studio.jpg" class="img-fluid b-lazy" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /// CAREERS SECTION /// -->
+        <div id="careers" class='large-margin'>
+            <a href="careers"></a><!-- Nav Anchor -->
+            <div class="row heading tiny-margin">
+                <div class="col-md-auto">
+                    <h1 class="animation-element slide-down">Trabaja con <span class="colored">Nosotros</span></h1>
+                </div>
+                <div class="col">
+                    <hr class="animation-element extend">
+                </div>
+            </div>
+            <div class="row medium-margin">
+                <div class="col-md-11">
+                    <h2 class="short-hr-left">OFERTAS DE TRABAJO</h2>
+                    <p>En TechPlayer, estamos en constante crecimiento y siempre buscamos personas apasionadas y talentosas para unirse a nuestro equipo. Si compartes nuestra pasión por crear experiencias excepcionales en la industria de los videojuegos y te esfuerzas por la excelencia, te invitamos a considerar las oportunidades de carrera que ofrecemos.</p><br>
+                </div>
+                <div class="col-md-4">
+                    <div class="job-card">
+                        <h3 class="colored">Desarrolladores de Juegos</h3>
+                        <p>Si eres un programador o desarrollador de juegos talentoso, ¡tu experiencia podría ser un gran activo para nosotros!</p>
+                        <button class="button" data-toggle="modal" data-target="#modal1">Ver detalles</button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="lead-programmer" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2 class="modal-title colored" id="lead-programmer">Desarrolladores de Juegos</h2>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>EL CANDIDATO IDEAL:</h3>
+                                    <p>Si eres un programador o desarrollador de juegos talentoso, ¡tu experiencia podría ser un gran activo para nosotros!</p>
+                                    <ul class="skill-list">
+                                        <li>C++</li>
+                                        <li>Dream Weaver</li>
+                                        <li>Unreal Engine</li>
+                                        <li>Blender</li>
+                                    </ul>
+                                    <br>
+                                    <h3>REQUISITOS</h3>
+                                    <ul>
+                                        <li><p>Grado en Ciencias de la Computación y/o Matemáticas</p></li>
+                                        <li><p>Competencia en c++ y programación orientada a objetos</p></li>
+                                        <li><p>Experiencia en desarrollo en la industria de los videojuegos es un plus.</p></li>
+                                        <li><p>Habilidades sólidas de comunicación y organización</p></li>
+                                        <li><p>Debe trabajar bien bajo presión y manejar múltiples tareas</p></li>
+                                        <li><p>Pasión por crear GRANDES juegos</p></li>
+                                    </ul>
+                                    <br>
+                                    <h3>CÓMO APLICAR</h3>
+                                    <p>Si crees que tienes lo necesario para unirte a nuestro equipo, postula aquí <a href="mailto:office@example.com" >office@example.com</a></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="button secondary" data-dismiss="modal">Cerrar</button>
+                                    <a href="mailto:office@example.com" class="button">Aplicar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="job-card">
+                        <h3 class="colored">Diseñadores Creativos</h3>
+                        <p>Aquellos con un ojo para el diseño de juegos, personajes y escenarios pueden encontrar su lugar en nuestro equipo.</p>
+                        <button class="button" data-toggle="modal" data-target="#modal2">Ver detalles</button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade " id="modal2" tabindex="-1" role="dialog" aria-labelledby="level-designer" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2 class="modal-title colored" id="level-designer">Diseñadores Creativos</h2>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>EL CANDIDATO IDEAL:</h3>
+                                    <p>Aquellos con un ojo para el diseño de juegos, personajes y escenarios pueden encontrar su lugar en nuestro equipo.</p>
+                                    <ul class="skill-list">
+                                        <li>C++</li>
+                                        <li>Dream Weaver</li>
+                                        <li>Unreal Engine</li>
+                                        <li>Blender</li>
+                                    </ul>
+                                    <br>
+                                    <h3>REQUISITOS</h3>
+                                    <ul>
+                                        <li><p>Grado en Ciencias de la Computación y/o Matemáticas</p></li>
+                                        <li><p>Competencia en c++ y programación orientada a objetos</p></li>
+                                        <li><p>Experiencia en desarrollo en la industria de los videojuegos es un plus.</p></li>
+                                        <li><p>Habilidades sólidas de comunicación y organización</p></li>
+                                        <li><p>Debe trabajar bien bajo presión y manejar múltiples tareas</p></li>
+                                        <li><p>Pasión por crear GRANDES juegos</p></li>
+                                    </ul>
+                                    <br>
+                                    <h3>CÓMO APLICAR</h3>
+                                    <p>Si crees que tienes lo necesario para unirte a nuestro equipo, postula aquí <a href="mailto:office@example.com" >office@example.com</a></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="button secondary" data-dismiss="modal">Cerrar</button>
+                                    <a href="mailto:office@example.com" class="button">Aplicar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="job-card">
+                        <h3 class="colored">Artistas Digitales</h3>
+                        <p> Si tienes habilidades en arte digital, animación o modelado 3D, tu creatividad es muy buscada.</p>
+                        <button class="button" data-toggle="modal" data-target="#modal3">Ver detalles</button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade " id="modal3" tabindex="-1" role="dialog" aria-labelledby="ai-engineer" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2 class="modal-title colored" id="ai-engineer">Artistas Digitales</h2>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                               <div class="modal-body">
+                                <h3>EL CANDIDATO IDEAL:</h3>
+                                    <p> Si tienes habilidades en arte digital, animación o modelado 3D, tu creatividad es muy buscada.</p>
+                                    <ul class="skill-list">
+                                        <li>C++</li>
+                                        <li>Dream Weaver</li>
+                                        <li>Unreal Engine</li>
+                                        <li>Blender</li>
+                                        <li>Scale Form</li>
+                                    </ul>
+                                    <br>
+                                    <h3>REQUIREMENTS:</h3>
+                                    <ul>
+                                        <li><p>Grado en Ciencias de la Computación y/o Matemáticas</p></li>
+                                        <li><p>Competencia en c++ y programación orientada a objetos</p></li>
+                                        <li><p>Experiencia en desarrollo en la industria de los videojuegos es un plus.</p></li>
+                                        <li><p>Habilidades sólidas de comunicación y organización</p></li>
+                                        <li><p>Debe trabajar bien bajo presión y manejar múltiples tareas</p></li>
+                                        <li><p>Pasión por crear GRANDES juegos</p></li>
+                                    </ul>
+                                    <br>
+                                    <h3>CÓMO APLICAR:</h3>
+                                    <p>Si crees que tienes lo necesario para unirte a nuestro equipo, postula aquí <a href="mailto:office@example.com" >office@example.com</a></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="button secondary" data-dismiss="modal">Close</button>
+                                    <a href="mailto:office@example.com" class="button">Apply</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="short-hr-center">NUESTRO BOLETÍN</h2>
+                    <p>Manténgase actualizado con el equipo y nuestros productos suscribiéndose a nuestro boletín.</p>
+                    <form id="newsletter" data-toggle="validator">
+                        <input type="email" id="emailsign" placeholder="Your email adress"> <!-- Email Field -->
+                        <button type="submit" id="form-signup" class="button">SUSCRIBIR</button>
+                        <div id="msgSignup" class="h3 text-center hidden"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- /// CONTACT SECTION /// -->
+        <div id="contact" class="large-margin">
+            <a href="contact"></a><!-- Nav Anchor -->
+            <div class="row heading tiny-margin">
+                <div class="col-md-auto">
+                    <h1 class="animation-element slide-down">PONERSE EN <span class="colored">CONTACTO</span></h1>
+                </div>
+                <div class="col">
+                    <hr class="animation-element extend">
+                </div>
+            </div>
+            <div class="">
+                <div class="row small-margin">
+                    <div class="col-md-11">
+                        <p>¡Gracias por ponerte en contacto con nosotros! Estamos aquí para ayudarte. Por favor, completa el siguiente formulario y te responderemos lo antes posible.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="short-hr-left">DEJANOS UN MENSAJE</h2>
+                        <form id="contactForm" data-toggle="validator">
+                            <div class="form-group">
+                                <!-- Name Field -->
+                                <input type="text" id="name" placeholder="Nombre*" required size="35" data-error="Name is required">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <!-- Email Field -->
+                                <input type="email" id="email" placeholder="Email*" required size="35" data-error="Email is required">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <!-- Message Field -->
+                                <textarea id="message" name="message" placeholder="Mensaje*" required data-error="Message cannot be empty"></textarea>
+                                <p class="subtle">* required field</p>
+                                <div class="help-block with-errors"></div>
+                                <!-- Submit Button -->
+                                <button type="submit" class="button">ENVIAR MENSAJE</button>
+                                <!-- Success Message -->
+                                <div id="msgSubmit" class="text-center hidden"></div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="short-hr-left">NUESTROS DETALLES</h2>
+                        <div id="contact-info">
+                            <ul>
+                                <li><i class="fa fa-phone"></i><p>Teléfono: <span class="colored"><a href="tel:+593 635585">+593  635 585</a></span></p></li>
+                                <li><i class="fa fa-envelope"></i><p>Email: <span class="colored"><a href="mailto:office@example.com">office@example.com</a></span></p></li>
+                                <li><i class="fa fa-globe"></i><p>Website: <span class="colored"><a href="www.mundodecompras.com" target="_blank">www.mundodecompras.com</a></span></p></li>
+                                <li><i class="fa fa-map-marker"></i><p>DIRECCIÓN: <span class="colored">Duran los Quemados</span></p></li>
+                            </ul>
+                        </div>
+                        <!-- Google Map -->
+                        <div id="map-canvas"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- Main Container End -->
+    <!-- /// FOOTER /// -->
+    <footer id="main-footer">
+        <div id="footer"> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p id="copyright">&copy; GenieSolutions <span id="year"> </span></p><!-- Copyright Text -->
+                        <ul class="social-links"> <!-- Social Media Icons -->
+                            <li><a href="#"><i class="fa fa-facebook fa-lg icon-social"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter  fa-lg icon-social"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus fa-lg icon-social"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin fa-lg icon-social"></i></a>
+                            <li><a href="#"><i class="fa fa-pinterest fa-lg icon-social"></i></a>
+                            <li><a href="#"><i class="fa fa-instagram fa-lg icon-social"></i></a>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- Container End -->
+        </div>
+    </footer><!-- Footer End -->
+    
+    <!-- //// SCRIPTS //// -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/blazy.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/jquery-modal-video.min.js"></script>
+    <script src="js/validator.min.js"></script>
+    <script src="js/strider.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB64kJJiSynOc9ZqkNMOyl94cvsw5Z2uno"></script>
+</body>
+</html>
